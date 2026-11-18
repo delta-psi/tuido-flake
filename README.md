@@ -22,7 +22,7 @@ A simple nix flake for `tuido`.
 
 {
   environment.systemPackages = [
-    tuido-tui.packages.${system}.default
+    inputs.tuido-tui.packages.${system}.default
   ];
 }
 ```
